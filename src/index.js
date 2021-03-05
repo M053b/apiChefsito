@@ -6,14 +6,14 @@ const router = require('./routes/routeIndex');
 
 //Port Config
 app.set('port',3000)
-
+app.set('json spaces',2)
 
 //Middleware
 app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas config
-app.use(require('./routes/routeIndex'));
+app.use("/api-juegos", require('./routes/routeIndex'));
 
 //Emepzando el server
 app.listen(app.get('port'));

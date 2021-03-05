@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "title":"TloZ",
+        "ver":"Ocarina of Time",
+        "genre":"Roleplay"
+    },
+    {
+        "id":"2",
+        "title":"Mario Bros",
+        "ver":"Mario Kart",
+        "genre":"Racing"
+    },
+    {
+        "id":"3",
+        "title":"Sonic",
+        "ver":"Adventure 2 Battle",
+        "genre":"Adventure"
+    }
+]
