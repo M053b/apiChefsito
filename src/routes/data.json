@@ -52,7 +52,7 @@
         ]
     },
     {
-        "clase": "Comida Fuerte",
+        "clase": "ComidaFuerte",
         "platillo":[
             {
                 "nombre": "Paella",

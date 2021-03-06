@@ -13,8 +13,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas config
-app.use('/api/juegos', require('./routes/routeIndex'));
+app.use('/api/chefsito', require('./routes/routeIndex'));
 
 //Emepzando el server
 app.listen(app.get('port'));
-console.log("Mi primer servidor");

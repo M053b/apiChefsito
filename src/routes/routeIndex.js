@@ -1,40 +1,25 @@
 const { Router } = require('express');
 const router = Router();
 
-//Variante
-//const express = require(express);
-//const router = express.Router();
 
-const juegos = require('./data.json');
-console.log(juegos);
-//Json
-router.get('/', (req,res) => {
-    res.json(juegos);
+const comidas = require('./data.json');
+
+
+router.get('/receta', (req,res) => {
+    res.json(comidas);
 });
 
-router.get('/:id', (req,res) => {
-    const {id} = req.params;
-    juegos.forEach(juego => {
-        if (juego.id == id){
-            res.json(juego)
+
+router.get('/receta/:clase', (req,res) => {
+    const {clase} = req.params;
+    comidas.forEach(comida => {
+        console.log(comida.clase);
+        if (comida.clase.toUpperCase() == clase.toUpperCase()){
+            res.json(comida)
         }
     });
     
-    res.json(juegos);
-});
-
-router.post('/', (req,res) => {
-    const {title, version, genre} = req.body
-
-    if (title && version && genre){
-        const id = juegos.length + 1;
-        const nuevojuego = {...req.body, id};
-        juegos.push(nuevojuego);
-        res.status(200).json(juegos);
-    }else{
-        res.status(500).json({error:'no data'});
-        res.send("Err32L No data");
-    }
+    res.status(500).json({error:'Clase no encontrada'});
 });
 
 
