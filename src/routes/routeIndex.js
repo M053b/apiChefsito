@@ -29,11 +29,7 @@ router.post('/', (req,res) => {
     if (title && version && genre){
         const id = juegos.length + 1;
         const nuevojuego = {...req.body, id};
-        
         juegos.push(nuevojuego);
-        
-        // console.log(nuevojuego)
-
         res.status(200).json(juegos);
     }else{
         res.status(500).json({error:'no data'});

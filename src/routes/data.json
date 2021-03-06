@@ -1,14 +1,169 @@
 [
     {
-        "id":"1",
-        "title":"The legend of Zelda",
-        "version":"Ocarina of Time",
-        "genre":"Adventure"
+        "clase": "Entrada",
+        "platillo":[
+            {
+                "nombre": "Pizza",
+                "personas": 5,
+                "ingrediente":[
+                    {
+                        "nombre": "Peperoni",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Piña",
+                        "cantidad": 50,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Queso",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Pan",
+                        "cantidad": 250,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Nachos",
+                "personas": 4,
+                "ingrediente":[
+                    {
+                        "nombre": "Totopos",
+                        "cantidad": 250,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Queso",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Aguacate",
+                        "cantidad": 80,
+                        "udm": "g"
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id":"2",
-        "title":"Mario Bros",
-        "version":"Mario Kart",
-        "genre":"Carreras"
+        "clase": "Comida Fuerte",
+        "platillo":[
+            {
+                "nombre": "Paella",
+                "personas": 4,
+                "ingrediente":[
+                    {
+                        "nombre": "Arroz",
+                        "cantidad": 1,
+                        "udm": "kg"
+                    },
+                    {
+                        "nombre": "Chorizo",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Camaron",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Cebolla",
+                        "cantidad": 50,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Ribeye",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Carne",
+                        "cantidad": 1,
+                        "udm": "kg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "clase": "Postre",
+        "platillo":[
+            {
+                "nombre": "Pastel",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Masa",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Fruta",
+                        "cantidad": 20,
+                        "udm": "g"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "clase": "Bebida",
+        "platillo":[
+            {
+                "nombre": "Limonada",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Agua",
+                        "cantidad": 500,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Azucar",
+                        "cantidad": 20,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Limón",
+                        "cantidad": 100,
+                        "udm": "ml"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "clase": "Desayuno",
+        "platillo":[
+            {
+                "nombre": "Pancakes",
+                "personas": 3,
+                "ingrediente":[
+                    {
+                        "nombre": "Mantequilla",
+                        "cantidad": 1,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Harina",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Huevo",
+                        "cantidad": 3,
+                        "udm": "unidades"
+                    }
+                ]
+            }
+        ]
     }
-] 
+]
