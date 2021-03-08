@@ -23,4 +23,26 @@ router.get('/receta/:clase', (req,res) => {
 });
 
 
+//Rutas clase/platillo
+router.get('/receta/:clase/:nombre', (req, res) =>{
+    const nombre = req.params.nombre;
+    const clase = req.params.clase;
+
+    comidas.forEach(comida => {
+        if (comida.clase.toUpperCase() == clase.toUpperCase()){
+            const platillos = comida.platillo;
+
+            platillos.forEach(platillo => {
+                if(platillo.nombre.toUpperCase() == nombre.toUpperCase()){
+                    res.json(platillo)
+                }
+            });
+
+            res.status(500).json({error:'Platillo no encontrado'});
+
+        }
+    });
+    res.status(500).json({error:'Clase no encontrada'});
+});
+
 module.exports = router;
