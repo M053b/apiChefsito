@@ -4,11 +4,11 @@
         "platillo":[
             {
                 "nombre": "Pizza",
-                "personas": 5,
+                "personas": 4,
                 "ingrediente":[
                     {
                         "nombre": "Peperoni",
-                        "cantidad": 100,
+                        "cantidad": 200,
                         "udm": "g"
                     },
                     {
@@ -18,33 +18,91 @@
                     },
                     {
                         "nombre": "Queso",
-                        "cantidad": 200,
+                        "cantidad": 250,
                         "udm": "g"
                     },
                     {
-                        "nombre": "Pan",
-                        "cantidad": 250,
+                        "nombre": "Masa",
+                        "cantidad": 550,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Boneless",
+                "personas": 3,
+                "ingrediente":[
+                    {
+                        "nombre": "Boneless",
+                        "cantidad": 800,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Salsa",
+                        "cantidad": 200,
+                        "udm": "ml"
+                    }
+                ]
+            },
+            {
+                "nombre": "Dedos de queso",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Masa",
+                        "cantidad": 750,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Harina",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Salsa",
+                        "cantidad": 100,
+                        "udm": "ml"
+                    }
+                ]
+            },
+            {
+                "nombre": "Dumplings",
+                "personas": 4,
+                "ingrediente":[
+                    {
+                        "nombre": "Masa",
+                        "cantidad": 1000,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Relleno",
+                        "cantidad": 500,
                         "udm": "g"
                     }
                 ]
             },
             {
                 "nombre": "Nachos",
-                "personas": 4,
+                "personas": 3,
                 "ingrediente":[
                     {
                         "nombre": "Totopos",
-                        "cantidad": 250,
+                        "cantidad": 700,
                         "udm": "g"
                     },
                     {
                         "nombre": "Queso",
-                        "cantidad": 100,
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Carne",
+                        "cantidad": 300,
                         "udm": "g"
                     },
                     {
                         "nombre": "Aguacate",
-                        "cantidad": 80,
+                        "cantidad": 100,
                         "udm": "g"
                     }
                 ]
@@ -88,6 +146,94 @@
                         "nombre": "Carne",
                         "cantidad": 1,
                         "udm": "kg"
+                    },
+                    {
+                        "nombre": "Papa",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Espagueti",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Pasta",
+                        "cantidad": 700,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Salsa de Tomate",
+                        "cantidad": 400,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Verdura",
+                        "cantidad": 50,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Queso",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Sushi",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Arroz en vinagre",
+                        "cantidad": 800,
+                        "udm": "kg"
+                    },
+                    {
+                        "nombre": "Queso Crema",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Zanahoria",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Pepino",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Proteina",
+                        "cantidad": 500,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Aguacate",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Salmon Sellado",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Pescado",
+                        "cantidad": 1.5,
+                        "udm": "kg"
+                    },
+                    {
+                        "nombre": "Arugula",
+                        "cantidad": 1,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Limon",
+                        "cantidad": 1,
+                        "udm": "mg"
                     }
                 ]
             }
@@ -98,16 +244,100 @@
         "platillo":[
             {
                 "nombre": "Pastel",
-                "personas": 2,
+                "personas": 5,
                 "ingrediente":[
                     {
                         "nombre": "Masa",
-                        "cantidad": 100,
+                        "cantidad": 800,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Betun",
+                        "cantidad": 250,
                         "udm": "g"
                     },
                     {
                         "nombre": "Fruta",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Pico de gallo",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Fruta picada",
+                        "cantidad": 750,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Jarabe",
+                        "cantidad": 100,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Extras",
+                        "cantidad": 150,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Nieve",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Helado",
+                        "cantidad": 250,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Cono",
                         "cantidad": 20,
+                        "udm": "pza"
+                    },
+                    {
+                        "nombre": "Extras",
+                        "cantidad": 150,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Pan dulce",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Pan dulce",
+                        "cantidad": 1,
+                        "udm": "pza"
+                    }
+                ]
+            },
+            {
+                "nombre": "Banana-Split",
+                "personas": 3,
+                "ingrediente":[
+                    {
+                        "nombre": "Helado",
+                        "cantidad": 500,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Banano",
+                        "cantidad": 1,
+                        "udm": "pza"
+                    },
+                    {
+                        "nombre": "Jarabe",
+                        "cantidad": 200,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Extras",
+                        "cantidad": 300,
                         "udm": "g"
                     }
                 ]
@@ -119,21 +349,85 @@
         "platillo":[
             {
                 "nombre": "Limonada",
+                "personas": 5,
+                "ingrediente":[
+                    {
+                        "nombre": "Agua",
+                        "cantidad": 1000,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Azucar",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Limón",
+                        "cantidad": 300,
+                        "udm": "ml"
+                    }
+                ]
+            },
+            {
+                "nombre": "Horchata",
+                "personas": 5,
+                "ingrediente":[
+                    {
+                        "nombre": "Agua",
+                        "cantidad": 1000,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Azucar",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Horchata",
+                        "cantidad": 100,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Sangria",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Vino",
+                        "cantidad": 500,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Sprite",
+                        "cantidad": 500,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Fruta",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Soda",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Soda de familia CocaCola",
+                        "cantidad": 750,
+                        "udm": "ml"
+                    }
+                ]
+            },
+            {
+                "nombre": "Agua",
                 "personas": 1,
                 "ingrediente":[
                     {
                         "nombre": "Agua",
                         "cantidad": 500,
-                        "udm": "ml"
-                    },
-                    {
-                        "nombre": "Azucar",
-                        "cantidad": 20,
-                        "udm": "g"
-                    },
-                    {
-                        "nombre": "Limón",
-                        "cantidad": 100,
                         "udm": "ml"
                     }
                 ]
@@ -149,18 +443,127 @@
                 "ingrediente":[
                     {
                         "nombre": "Mantequilla",
-                        "cantidad": 1,
+                        "cantidad": 200,
                         "udm": "g"
                     },
                     {
-                        "nombre": "Harina",
+                        "nombre": "Masa",
+                        "cantidad": 1000,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Jarabe",
+                        "cantidad": 300,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Extras",
+                        "cantidad": 300,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Waffles",
+                "personas": 2,
+                "ingrediente":[
+                    {
+                        "nombre": "Mantequilla",
                         "cantidad": 100,
                         "udm": "g"
                     },
                     {
+                        "nombre": "Masa",
+                        "cantidad": 700,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Jarabe",
+                        "cantidad": 200,
+                        "udm": "ml"
+                    },
+                    {
+                        "nombre": "Extras",
+                        "cantidad": 100,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Huevos Rancheros",
+                "personas": 1,
+                "ingrediente":[
+                    {
                         "nombre": "Huevo",
+                        "cantidad": 2,
+                        "udm": "pza"
+                    },
+                    {
+                        "nombre": "Carne",
+                        "cantidad": 300,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Tocino",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "Huevo con Frijol",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Huevo",
+                        "cantidad": 2,
+                        "udm": "pza"
+                    },
+                    {
+                        "nombre": "Frijol",
+                        "cantidad": 250,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Tortilla",
                         "cantidad": 3,
-                        "udm": "unidades"
+                        "udm": "pza"
+                    },
+                    {
+                        "nombre": "Proteina Extra",
+                        "cantidad": 200,
+                        "udm": "g"
+                    }
+                ]
+            },
+            {
+                "nombre": "SalchiPapas",
+                "personas": 1,
+                "ingrediente":[
+                    {
+                        "nombre": "Papa",
+                        "cantidad": 400,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Salchicha",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Buba Asada",
+                        "cantidad": 200,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Tocino",
+                        "cantidad": 100,
+                        "udm": "g"
+                    },
+                    {
+                        "nombre": "Queso",
+                        "cantidad": 300,
+                        "udm": "g"
                     }
                 ]
             }
