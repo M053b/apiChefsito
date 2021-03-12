@@ -50,12 +50,10 @@ router.get('/menu-del-dia/:numPersonas', (req,res) => {
     let menuDia = []
     const numPersonas = req.params.numPersonas;
 
-    // console.log("/////////////")
-    // console.log(!isNaN(numPersonas))
 
-    // if (!isNaN(numPersonas) || numPersonas < 0){
-    //     res.status(500).json({error:'Parámetro no válido'});
-    // }
+    if (!(!isNaN(numPersonas) && Number.isInteger(parseFloat(numPersonas)))){
+        res.status(500).json({error:'Parámetro no válido'});
+    }
 
     comidas.forEach(comida => {
         let dictP = {};
