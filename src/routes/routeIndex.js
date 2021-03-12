@@ -45,4 +45,42 @@ router.get('/receta/:clase/:nombre', (req, res) =>{
     res.status(500).json({error:'Clase no encontrada'});
 });
 
+
+router.get('/menu-del-dia/:numPersonas', (req,res) => {
+    let menuDia = []
+    const numPersonas = req.params.numPersonas;
+
+    // console.log("/////////////")
+    // console.log(!isNaN(numPersonas))
+
+    // if (!isNaN(numPersonas) || numPersonas < 0){
+    //     res.status(500).json({error:'Parámetro no válido'});
+    // }
+
+    comidas.forEach(comida => {
+        let dictP = {};
+        dictP.clase = comida.clase;
+
+        platilloRandom = comida.platillo[Math.floor(Math.random() * comida.platillo.length)]
+
+        let listI = []
+        platilloRandom.ingrediente.forEach(ingrediente =>{
+            let dictI = {};
+            dictI.nombre = ingrediente.nombre;
+            dictI.cantidad = (ingrediente.cantidad/platilloRandom.personas) * numPersonas;
+            dictI.udm = ingrediente.udm;
+            listI.push(dictI);
+        })
+
+        dictP.platillo = platilloRandom.nombre;
+        dictP.ingredientes = listI;
+
+        menuDia.push(dictP)
+    });
+
+    res.json(menuDia)
+
+});
+
+
 module.exports = router;
