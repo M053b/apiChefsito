@@ -75,7 +75,7 @@
                         "udm": "g"
                     },
                     {
-                        "nombre": "Relleno",
+                        "nombre": "Proteina Relleno",
                         "cantidad": 500,
                         "udm": "g"
                     }
@@ -118,8 +118,8 @@
                 "ingrediente":[
                     {
                         "nombre": "Arroz",
-                        "cantidad": 1,
-                        "udm": "kg"
+                        "cantidad": 1000,
+                        "udm": "g"
                     },
                     {
                         "nombre": "Chorizo",
@@ -144,8 +144,8 @@
                 "ingrediente":[
                     {
                         "nombre": "Carne",
-                        "cantidad": 1,
-                        "udm": "kg"
+                        "cantidad": 1000,
+                        "udm": "g"
                     },
                     {
                         "nombre": "Papa",
@@ -187,7 +187,7 @@
                     {
                         "nombre": "Arroz en vinagre",
                         "cantidad": 800,
-                        "udm": "kg"
+                        "udm": "g"
                     },
                     {
                         "nombre": "Queso Crema",
@@ -222,8 +222,8 @@
                 "ingrediente":[
                     {
                         "nombre": "Pescado",
-                        "cantidad": 1.5,
-                        "udm": "kg"
+                        "cantidad": 1500,
+                        "udm": "g"
                     },
                     {
                         "nombre": "Arugula",
