@@ -1,10 +1,24 @@
 const { Router } = require('express');
 const router = Router();
-//const comidas = require('./data.json');
 
 const productosCtrl = require('../controller/productosController');
+const empresasCtrl = require('../controller/empresasController');
+
+router.get('/empresas', empresasCtrl.getEmpresas);
+
+router.delete('/empresas', empresasCtrl.deleteEmpresas);
+
+router.get('/empresa/:id', empresasCtrl.getEmpresa);
+
+router.delete('/empresa/:id', empresasCtrl.deleteEmpresa);
+
+router.put('/empresa/:id', empresasCtrl.updateEmpresa);
+
+router.post('/empresa', empresasCtrl.createEmpresa);
 
 router.get('/productos', productosCtrl.getProducts);
+
+router.delete('/productos', productosCtrl.deleteProducts);
 
 router.get('/producto/:id', productosCtrl.getProduct);
 

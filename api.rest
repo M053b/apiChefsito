@@ -1,54 +1,552 @@
 ###
+GET  http://localhost:3000/api/chefsito/empresas
+###
+GET  http://localhost:3000/api/chefsito/productos
+###
+DELETE  http://localhost:3000/api/chefsito/empresas
+###
+DELETE  http://localhost:3000/api/chefsito/productos
+###
+//POSTS
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "Dessierto Cookies",
+    "empresa_id" : "1",
+    "eslogan": "Calidez y Sabor",
+    "descripcion": "Ventas, giveaways, sorteos y mas",
+    "servicio": "Comida",
+    "instagram": "true",
+    "facebook": "true",
+    "direccion": "Mexicali BC, Calz Cetys",
+    "estrellas": "4.8",
+    "lng": "-115.4228738",
+    "lat": "32.6552542"
+}
+###
 POST http://localhost:3000/api/chefsito/producto
 Content-Type: application/json
 
 {
-"id": "60b9ba73789daa303834eaf0",
-"nombre_empresa": "@MueblesTrondsadascosos",
-"eslogan": "Troncosos siuuu",
-"descripcion": "Vendemos tronocos",
-"servicio": "Punto medio",
-"categoria": "Objeto",
-"instagram": true,
-"facebook": false,
-"estrellas": 2.4,
-"lng": -115.4368642,
-"lat": 32.6581808
+    "nombre_producto": "Red Velvet Cookies",
+    "producto_id": "001",
+    "proveedor" : "60b9ff68db100062e86a0738",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galletas de red velvet",
+    "costo": 120
 }
-
 ###
 POST http://localhost:3000/api/chefsito/producto
 Content-Type: application/json
 
 {
-"id": "60b9ba73789daa303834eaf1",
-"nombre_empresa": "@dessierto",
-"eslogan": "Rico",
-"descripcion": "Siuu",
-"servicio": "Servicio a domicilio",
-"categoria": "Comida",
-"instagram": true,
-"facebook": false,
-"estrellas": 2.4,
-"lng": -115.4368642,
-"lat": 32.6581708
+    "nombre_producto": "Choco Cookies",
+    "producto_id": "002",
+    "proveedor" : "60b9ff68db100062e86a0738",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galletas de chispas de chocolate",
+    "costo": 120
 }
-
 ###
-GET http://localhost:3000/api/chefsito/productos
-
-###
-GET http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf0
-
-
-###
-PUT http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf9
+POST http://localhost:3000/api/chefsito/producto
 Content-Type: application/json
 
 {
-"descripcion": "hola"
+    "nombre_producto": "Reeses N Nut",
+    "producto_id": "003",
+    "proveedor" : "60b9ff68db100062e86a0738",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galletas de reeses con nuez",
+    "costo": 150
 }
-
 ###
-DELETE http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf1
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
 
+{
+    "nombre_producto": "Galleton",
+    "producto_id": "004",
+    "proveedor" : "60b9ff68db100062e86a0738",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galleta gigante!",
+    "costo": 100
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "GalleTaz Locaz",
+    "empresa_id" : "2",
+    "eslogan": "Galletas locas",
+    "descripcion": "Ponte bien galleloco",
+    "servicio": "Comida",
+    "instagram": "true",
+    "facebook": "false",
+    "direccion": "Carranza, #101",
+    "estrellas": "4.20",
+    "lng": "-115.4228838",
+    "lat": "32.6552522"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Galleta Loca",
+    "producto_id": "005",
+    "proveedor" : "60b9ff88db100062e86a073e",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galletas con ingredientes sorpresa al azar",
+    "costo": 150
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Crazy Cookie",
+    "producto_id": "006",
+    "proveedor" : "60b9ff88db100062e86a073e",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galleta con exceso de azucar",
+    "costo": 200
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "Dollci",
+    "empresa_id" : "3",
+    "eslogan": "Galletas premium para la ocacion",
+    "descripcion": "Galletas artesanales hechas al pedido",
+    "servicio": "Comida",
+    "instagram": "false",
+    "facebook": "true",
+    "direccion": "San Pedro 2, La Jolla #513",
+    "estrellas": "3.5",
+    "lng": "-55",
+    "lat": "619"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Galleta Ferrero",
+    "producto_id": "007",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Galletas",
+    "descripcion": "Galletas con chispas de ferrero roche",
+    "costo": 200
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "TroncosTruncados",
+    "empresa_id" : "4",
+    "eslogan": "Madera Madura",
+    "descripcion": "Productos de madera hechos a mano",
+    "servicio": "Objeto",
+    "instagram": "true",
+    "facebook": "true",
+    "direccion": "Enrique Segoviano, #8",
+    "estrellas": "4.4",
+    "lng": "-65",
+    "lat": "159"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Buro",
+    "producto_id": "008",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Mueble",
+    "descripcion": "Tocador de mesa hecho de madera",
+    "costo": 550
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Buro",
+    "producto_id": "009",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Mueble",
+    "descripcion": "Mesa de comedor 2.5 x 1 mts ",
+    "costo": 1500
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "Ay RonMan",
+    "empresa_id" : "5",
+    "eslogan": "Metales Metalurgios",
+    "descripcion": "Metalurgia y soldadura",
+    "servicio": "Objeto",
+    "instagram": "false",
+    "facebook": "true",
+    "direccion": "Ruta 66",
+    "estrellas": "3.3",
+    "lng": "-52",
+    "lat": "121"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Modelo de carro",
+    "producto_id": "010",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Escultura",
+    "descripcion": "Modelo metalico miniatura de tu carro",
+    "costo": 2000
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "El Garash",
+    "empresa_id" : "6",
+    "eslogan": "Crea tu mundo 3D",
+    "descripcion": "Modelado, impresion y creacion de figuras 3d",
+    "servicio": "Objeto",
+    "instagram": "true",
+    "facebook": "true",
+    "direccion": "San Marcos, #123",
+    "estrellas": "4.0",
+    "lng": "-42",
+    "lat": "140"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Fidget Spinner",
+    "producto_id": "011",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Juguete",
+    "descripcion": "Fidget Spinner personalizado",
+    "costo": 200
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "Corina Accesorios",
+    "empresa_id" : "7",
+    "eslogan": "Accesorios hechos a mano",
+    "descripcion": "Accesorios hechos por manos cachanillas",
+    "servicio": "Articulo",
+    "instagram": "true",
+    "facebook": "false",
+    "direccion": "Av.Marmoleros #1598, Col. Libertad, 21030 Mexicali, BC",
+    "estrellas": "4.6",
+    "lng": "-32",
+    "lat": "214"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Pulsera",
+    "producto_id": "012",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Joyeria",
+    "descripcion": "Pulsera personalizada",
+    "costo": 250
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Collares",
+    "producto_id": "013",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Joyeria",
+    "descripcion": "Collar personalizado",
+    "costo": 400
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Aretes",
+    "producto_id": "014",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Joyeria",
+    "descripcion": "Par de aretes personalizados",
+    "costo": 300
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "netizen.mx",
+    "empresa_id" : "8",
+    "eslogan": "Articulos bordados a mano",
+    "descripcion": "Articulos de ropa bordados a mano",
+    "servicio": "Articulo",
+    "instagram": "true",
+    "facebook": "false",
+    "direccion": "Mexicali, B.C.",
+    "estrellas": "4.8",
+    "lng": "-62",
+    "lat": "324"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Camiseta",
+    "producto_id": "015",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Ropa",
+    "descripcion": "Camiseta bordada personalizada",
+    "costo": 300
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Sudadera",
+    "producto_id": "016",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Ropa",
+    "descripcion": "Sudadera bordada personalizada",
+    "costo": 400
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Gorra",
+    "producto_id": "017",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Ropa",
+    "descripcion": "Gorra bordada personalizada",
+    "costo": 250
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "Beuty Bath Salts",
+    "empresa_id" : "9",
+    "eslogan": "Articulos de baño",
+    "descripcion": "Jabones, aromatizantes, geles y mas!",
+    "servicio": "Articulo",
+    "instagram": "false",
+    "facebook": "true",
+    "direccion": "Monte Video, #420",
+    "estrellas": "3.8",
+    "lng": "-28",
+    "lat": "284"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Jabon",
+    "producto_id": "018",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Articulo",
+    "descripcion": "Jabones personalizados",
+    "costo": 200
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Gel de baño",
+    "producto_id": "019",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Articulo",
+    "descripcion": "Gel de baño personalizados",
+    "costo": 300
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "DJ Bonk",
+    "empresa_id" : "10",
+    "eslogan": "Musica chila en tu evento chilo",
+    "descripcion": "Servicio de DJ con experiencia",
+    "servicio": "Servicio",
+    "instagram": "true",
+    "facebook": "false",
+    "direccion": "Republica de Chile #736",
+    "estrellas": "4.9",
+    "lng": "-84",
+    "lat": "295"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Noche Privada",
+    "producto_id": "020",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Entretenimiento",
+    "descripcion": "Una noche de fiesta, set de musica por 5 horas",
+    "costo": 2500
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "En vivo",
+    "producto_id": "021",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Entretenimiento",
+    "descripcion": "Musica en vivo personalizada por 6 horas",
+    "costo": 3500
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "DanyDecor",
+    "empresa_id" : "11",
+    "eslogan": "Decoraciones Danyvinas!",
+    "descripcion": "Servicio de decoracion para eventos",
+    "servicio": "Servicio",
+    "instagram": "true",
+    "facebook": "true",
+    "direccion": "Mexicali BC, Vistahermosa #789",
+    "estrellas": "3.9",
+    "lng": "-42",
+    "lat": "387"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Cuarto decorado",
+    "producto_id": "022",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Decoracion",
+    "descripcion": "Decoracion personalizada para un cuarto promedio",
+    "costo": 2000
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Evento decorado",
+    "producto_id": "023",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Decoracion",
+    "descripcion": "Decoracion personalizada para TODO tu evento",
+    "costo": 3500
+}
+###
+POST http://localhost:3000/api/chefsito/empresa
+Content-Type: application/json
+
+{
+    "nombre_empresa": "CaterineCatering",
+    "empresa_id" : "12",
+    "eslogan": "Comida chabosa!",
+    "descripcion": "Servicio de catering para tus eventos",
+    "servicio": "Servicio",
+    "instagram": "true",
+    "facebook": "true",
+    "direccion": "Mexicali BC",
+    "estrellas": "4.5",
+    "lng": "-22",
+    "lat": "243"
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Catering x 20 personas",
+    "producto_id": "024",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Catering",
+    "descripcion": "Servicio de comida catering a gusto para 20 personas",
+    "costo": 2000
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Catering x 40 personas",
+    "producto_id": "025",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Catering",
+    "descripcion": "Servicio de comida catering a gusto para 40 personas",
+    "costo": 4000
+}
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+    "nombre_producto": "Catering x 60 personas",
+    "producto_id": "026",
+    "proveedor" : "empresaIDMONGO",
+    "imgPath":"",
+    "categoria": "Catering",
+    "descripcion": "Servicio de comida catering a gusto para 60 personas",
+    "costo": 6000
+}
