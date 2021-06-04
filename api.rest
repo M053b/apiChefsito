@@ -1,0 +1,54 @@
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+"id": "60b9ba73789daa303834eaf0",
+"nombre_empresa": "@MueblesTrondsadascosos",
+"eslogan": "Troncosos siuuu",
+"descripcion": "Vendemos tronocos",
+"servicio": "Punto medio",
+"categoria": "Objeto",
+"instagram": true,
+"facebook": false,
+"estrellas": 2.4,
+"lng": -115.4368642,
+"lat": 32.6581808
+}
+
+###
+POST http://localhost:3000/api/chefsito/producto
+Content-Type: application/json
+
+{
+"id": "60b9ba73789daa303834eaf1",
+"nombre_empresa": "@dessierto",
+"eslogan": "Rico",
+"descripcion": "Siuu",
+"servicio": "Servicio a domicilio",
+"categoria": "Comida",
+"instagram": true,
+"facebook": false,
+"estrellas": 2.4,
+"lng": -115.4368642,
+"lat": 32.6581708
+}
+
+###
+GET http://localhost:3000/api/chefsito/productos
+
+###
+GET http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf0
+
+
+###
+PUT http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf9
+Content-Type: application/json
+
+{
+"descripcion": "hola"
+}
+
+###
+DELETE http://localhost:3000/api/chefsito/producto/60b9ba73789daa303834eaf1
+

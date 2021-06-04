@@ -1,16 +1,22 @@
 const { Router } = require('express');
 const router = Router();
+//const comidas = require('./data.json');
 
+const productosCtrl = require('../controller/productosController');
 
-const comidas = require('./data.json');
+router.get('/productos', productosCtrl.getProducts);
 
-// Obtener todos los platillos (Todo el JSON)
-router.get('/receta', (req,res) => {
-    res.json(comidas);
-});
+router.get('/producto/:id', productosCtrl.getProduct);
 
+router.delete('/producto/:id', productosCtrl.deleteProduct);
 
-// Obtener platillos filtrados por clase
+router.put('/producto/:id', productosCtrl.updateProduct);
+
+router.post('/producto', productosCtrl.createProduct);
+
+module.exports = router;
+
+/*
 router.get('/receta/:clase', (req,res) => {
     const {clase} = req.params;
     comidas.forEach(comida => {
@@ -85,6 +91,4 @@ router.get('/menu-del-dia/:numPersonas', (req,res) => {
 
     res.json(menuDia)
 });
-
-
-module.exports = router;
+*/
