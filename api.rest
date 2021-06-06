@@ -1,15 +1,21 @@
+//Todas las empresas
 ###
-GET  http://localhost:3000/api/chefsito/empresas
+GET  http://localhost:3000/api/intersec/empresas
+//Todos los productos
 ###
-GET  http://localhost:3000/api/chefsito/productos
+GET  http://localhost:3000/api/intersec/productos
+//Borrar todas las empresas
 ###
-DELETE  http://localhost:3000/api/chefsito/empresas
+DELETE  http://localhost:3000/api/intersec/empresas
+//Borrar todos los productos
 ###
-DELETE  http://localhost:3000/api/chefsito/productos
+DELETE  http://localhost:3000/api/intersec/productos
+//Obtener Uno
 ###
-//POSTS
+GET http://localhost:3000/api/intersec/empresa/1
+//POSTS de creacion de registros
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -22,63 +28,65 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Mexicali BC, Calz Cetys",
     "estrellas": "4.8",
-    "lng": "-115.4228738",
-    "lat": "32.6552542"
+    "lng": "-115.41111497589888",
+    "lat": "32.65129767822603" 
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/1
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Red Velvet Cookies",
     "producto_id": "001",
-    "proveedor" : "60b9ff68db100062e86a0738",
-    "imgPath":"",
+    "proveedor" : "60ba942cc439060e14ed3878",
+    "imgPath":"desierto_red_velvet.png",
     "categoria": "Galletas",
     "descripcion": "Galletas de red velvet",
     "costo": 120
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Choco Cookies",
     "producto_id": "002",
-    "proveedor" : "60b9ff68db100062e86a0738",
-    "imgPath":"",
+    "proveedor" : "60ba942cc439060e14ed3878",
+    "imgPath":"dessierto_choco.png",
     "categoria": "Galletas",
     "descripcion": "Galletas de chispas de chocolate",
     "costo": 120
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Reeses N Nut",
     "producto_id": "003",
-    "proveedor" : "60b9ff68db100062e86a0738",
-    "imgPath":"",
+    "proveedor" : "60ba942cc439060e14ed3878",
+    "imgPath":"desierto_resses.png",
     "categoria": "Galletas",
     "descripcion": "Galletas de reeses con nuez",
     "costo": 150
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Galleton",
     "producto_id": "004",
-    "proveedor" : "60b9ff68db100062e86a0738",
-    "imgPath":"",
+    "proveedor" : "60ba942cc439060e14ed3878",
+    "imgPath":"desierto_galleton.png",
     "categoria": "Galletas",
     "descripcion": "Galleta gigante!",
     "costo": 100
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -91,37 +99,39 @@ Content-Type: application/json
     "facebook": "false",
     "direccion": "Carranza, #101",
     "estrellas": "4.20",
-    "lng": "-115.4228838",
-    "lat": "32.6552522"
+    "lng": "-115.40978460022554",
+    "lat": "32.65371858448524"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/2
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Galleta Loca",
     "producto_id": "005",
-    "proveedor" : "60b9ff88db100062e86a073e",
-    "imgPath":"",
+    "proveedor" : "60ba9448c439060e14ed387e",
+    "imgPath":"galleLoca.jpg",
     "categoria": "Galletas",
     "descripcion": "Galletas con ingredientes sorpresa al azar",
     "costo": 150
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Crazy Cookie",
     "producto_id": "006",
-    "proveedor" : "60b9ff88db100062e86a073e",
-    "imgPath":"",
+    "proveedor" : "60ba9448c439060e14ed387e",
+    "imgPath":"crazyCookie.jpeg",
     "categoria": "Galletas",
     "descripcion": "Galleta con exceso de azucar",
     "costo": 200
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -134,24 +144,26 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "San Pedro 2, La Jolla #513",
     "estrellas": "3.5",
-    "lng": "-55",
-    "lat": "619"
+    "lng": "-115.41326074311397",
+    "lat": "32.65722336247274"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/3
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Galleta Ferrero",
     "producto_id": "007",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9455c439060e14ed3882",
+    "imgPath":"ferreroCookie.jpg",
     "categoria": "Galletas",
     "descripcion": "Galletas con chispas de ferrero roche",
     "costo": 200
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -164,37 +176,39 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Enrique Segoviano, #8",
     "estrellas": "4.4",
-    "lng": "-65",
-    "lat": "159"
+    "lng": "-115.40668667114285",
+    "lat": "32.65579059088339"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/4
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Buro",
     "producto_id": "008",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9461c439060e14ed3885",
+    "imgPath":"buro.jpg",
     "categoria": "Mueble",
     "descripcion": "Tocador de mesa hecho de madera",
     "costo": 550
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
-    "nombre_producto": "Buro",
+    "nombre_producto": "Mesa",
     "producto_id": "009",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9461c439060e14ed3885",
+    "imgPath":"mesa.jpg",
     "categoria": "Mueble",
     "descripcion": "Mesa de comedor 2.5 x 1 mts ",
     "costo": 1500
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -207,24 +221,26 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Ruta 66",
     "estrellas": "3.3",
-    "lng": "-52",
-    "lat": "121"
+    "lng": "-115.41347873594907",
+    "lat": "32.65690483591094"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/5
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Modelo de carro",
     "producto_id": "010",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba946fc439060e14ed3889",
+    "imgPath":"carModel.jpg",
     "categoria": "Escultura",
     "descripcion": "Modelo metalico miniatura de tu carro",
     "costo": 2000
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -237,24 +253,26 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "San Marcos, #123",
     "estrellas": "4.0",
-    "lng": "-42",
-    "lat": "140"
+    "lng": "-115.41841765934137",
+    "lat": "32.65199435045105"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/6
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Fidget Spinner",
     "producto_id": "011",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9477c439060e14ed388c",
+    "imgPath":"fidgetSpinner.jpg",
     "categoria": "Juguete",
     "descripcion": "Fidget Spinner personalizado",
     "costo": 200
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -267,50 +285,52 @@ Content-Type: application/json
     "facebook": "false",
     "direccion": "Av.Marmoleros #1598, Col. Libertad, 21030 Mexicali, BC",
     "estrellas": "4.6",
-    "lng": "-32",
-    "lat": "214"
+    "lng": "-115.42385867780085",
+    "lat": "32.65036197644691"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/7
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Pulsera",
     "producto_id": "012",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9482c439060e14ed388f",
+    "imgPath":"pulsera.jpg",
     "categoria": "Joyeria",
     "descripcion": "Pulsera personalizada",
     "costo": 250
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Collares",
     "producto_id": "013",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9482c439060e14ed388f",
+    "imgPath":"collar.jpg",
     "categoria": "Joyeria",
     "descripcion": "Collar personalizado",
     "costo": 400
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Aretes",
     "producto_id": "014",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9482c439060e14ed388f",
+    "imgPath":"aretes.jpg",
     "categoria": "Joyeria",
     "descripcion": "Par de aretes personalizados",
     "costo": 300
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -323,50 +343,52 @@ Content-Type: application/json
     "facebook": "false",
     "direccion": "Mexicali, B.C.",
     "estrellas": "4.8",
-    "lng": "-62",
-    "lat": "324"
+    "lng": "-115.40305355740799",
+    "lat": "32.65381976565317"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/8
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
-    "nombre_producto": "Camiseta",
+    "nombre_producto": "Camiseta Bordada",
     "producto_id": "015",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9492c439060e14ed3894",
+    "imgPath":"camiseta.jpg",
     "categoria": "Ropa",
     "descripcion": "Camiseta bordada personalizada",
     "costo": 300
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
-    "nombre_producto": "Sudadera",
+    "nombre_producto": "Sudadera Bordada",
     "producto_id": "016",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9492c439060e14ed3894",
+    "imgPath":"sudadera.jpg",
     "categoria": "Ropa",
     "descripcion": "Sudadera bordada personalizada",
     "costo": 400
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
-    "nombre_producto": "Gorra",
+    "nombre_producto": "Gorra Bordada",
     "producto_id": "017",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba9492c439060e14ed3894",
+    "imgPath":"gorra.jpg",
     "categoria": "Ropa",
     "descripcion": "Gorra bordada personalizada",
     "costo": 250
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -379,37 +401,39 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Monte Video, #420",
     "estrellas": "3.8",
-    "lng": "-28",
-    "lat": "284"
+    "lng": "-115.41201768743699",
+    "lat": "32.65589086469248"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/9
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Jabon",
     "producto_id": "018",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94a0c439060e14ed3899",
+    "imgPath":"jabon.jpg",
     "categoria": "Articulo",
     "descripcion": "Jabones personalizados",
     "costo": 200
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Gel de baño",
     "producto_id": "019",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94a0c439060e14ed3899",
+    "imgPath":"gelDBano.jpg",
     "categoria": "Articulo",
     "descripcion": "Gel de baño personalizados",
     "costo": 300
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -422,37 +446,39 @@ Content-Type: application/json
     "facebook": "false",
     "direccion": "Republica de Chile #736",
     "estrellas": "4.9",
-    "lng": "-84",
-    "lat": "295"
+    "lng": "-115.41321497101582",
+    "lat": "32.650921626390584"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/10
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Noche Privada",
     "producto_id": "020",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94afc439060e14ed389d",
+    "imgPath":"nocheDJ.jpeg",
     "categoria": "Entretenimiento",
     "descripcion": "Una noche de fiesta, set de musica por 5 horas",
     "costo": 2500
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "En vivo",
     "producto_id": "021",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94afc439060e14ed389d",
+    "imgPath":"eventoVivoDJ.png",
     "categoria": "Entretenimiento",
     "descripcion": "Musica en vivo personalizada por 6 horas",
     "costo": 3500
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -465,37 +491,39 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Mexicali BC, Vistahermosa #789",
     "estrellas": "3.9",
-    "lng": "-42",
-    "lat": "387"
+    "lng": "-115.4155592249811",
+    "lat": "32.6524624311095"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/11
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Cuarto decorado",
     "producto_id": "022",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94bcc439060e14ed38a1",
+    "imgPath":"roomDecor.jpg",
     "categoria": "Decoracion",
     "descripcion": "Decoracion personalizada para un cuarto promedio",
     "costo": 2000
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Evento decorado",
     "producto_id": "023",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94bcc439060e14ed38a1",
+    "imgPath":"eventDecor.jpg",
     "categoria": "Decoracion",
     "descripcion": "Decoracion personalizada para TODO tu evento",
     "costo": 3500
 }
 ###
-POST http://localhost:3000/api/chefsito/empresa
+POST http://localhost:3000/api/intersec/empresa
 Content-Type: application/json
 
 {
@@ -508,44 +536,46 @@ Content-Type: application/json
     "facebook": "true",
     "direccion": "Mexicali BC",
     "estrellas": "4.5",
-    "lng": "-22",
-    "lat": "243"
+    "lng": "-115.41386210331564",
+    "lat": "32.652230492385044"
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+GET http://localhost:3000/api/intersec/empresa/12
+###
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Catering x 20 personas",
     "producto_id": "024",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94cac439060e14ed38a5",
+    "imgPath":"catering20.jpg",
     "categoria": "Catering",
     "descripcion": "Servicio de comida catering a gusto para 20 personas",
     "costo": 2000
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Catering x 40 personas",
     "producto_id": "025",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94cac439060e14ed38a5",
+    "imgPath":"catering40.jpg",
     "categoria": "Catering",
     "descripcion": "Servicio de comida catering a gusto para 40 personas",
     "costo": 4000
 }
 ###
-POST http://localhost:3000/api/chefsito/producto
+POST http://localhost:3000/api/intersec/producto
 Content-Type: application/json
 
 {
     "nombre_producto": "Catering x 60 personas",
     "producto_id": "026",
-    "proveedor" : "empresaIDMONGO",
-    "imgPath":"",
+    "proveedor" : "60ba94cac439060e14ed38a5",
+    "imgPath":"catering60.jpg",
     "categoria": "Catering",
     "descripcion": "Servicio de comida catering a gusto para 60 personas",
     "costo": 6000

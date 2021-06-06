@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors())
 
 //Rutas config
-app.use('/api/chefsito', require('./routes/routeIndex'));
+app.use('/api/intersec', require('./routes/routeIndex'));
 
 //Emepzando el server
 app.listen(app.get('port'));
